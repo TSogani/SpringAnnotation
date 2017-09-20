@@ -1,0 +1,8 @@
+package com.ann.config;
+
+public class FirstAppConfig {
+	
+	public Chain newChain(){
+		Chain chain = new Chain();
+	}
+}

@@ -1,0 +1,14 @@
+package com.ann.beans;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
+@Component
+public class AppConfig {
+	public Course course;
+@Bean
+	public Course newCourse(){
+		course = new Course();
+		return course;
+	}
+}

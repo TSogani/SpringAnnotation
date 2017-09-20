@@ -1,0 +1,16 @@
+package com.ann.config;
+
+import org.springframework.context.annotation.Bean;
+
+import com.ann.beans.Bycle;
+
+public class RootConfig {
+
+	Bean(name="bycle",)
+	private Bycle new Bycle(){
+		
+		Bycle bycle = new Bycle();
+		
+		return bycle;
+	}
+}

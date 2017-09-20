@@ -1,0 +1,6 @@
+package com.st.beans;
+
+public class Emplyee {
+	private int id;
+	private String name;
+}

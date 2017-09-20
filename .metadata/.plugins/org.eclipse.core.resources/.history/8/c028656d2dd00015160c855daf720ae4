@@ -1,0 +1,16 @@
+package com.st.beans;
+
+public class Processor {
+	public Processor() {
+		System.out.println("processor loading...");
+	}
+	
+	public void start(){
+		
+		System.out.println("processor running...");
+	}
+	
+	public void shutDown(){
+		
+	}
+}

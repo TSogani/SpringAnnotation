@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="10_Qualifire_with_autowire_constructor_parameter_level"/>
+<aop-project name="2_Required_Annotation_using_BeanFactory"/>
+<aop-project name="9_Qualifire_with_autowire_setter_level"/>
+<aop-project name="00_Autowire_annotation"/>
+<aop-project name="7_AutoWire_@_arbitaryMethod_level"/>
+<aop-project name="8_Qualifire_with_autowiree_arbitaryMethod_level"/>
+<aop-project name="6_AutoWire_@_constructor_level"/>
+<aop-project name="1_Required_Annotation_using_ApplicationContext"/>
+<aop-project name="26_Resource_inject_WithOut_ConfigurationFile"/>
+<aop-project name="3_AutoWire_@_attribute_level"/>
+<aop-project name="17_Configuration_Bean"/>
+<aop-project name="5_AutoWire_@_setter_level"/>
+<aop-project name="11_stereoType_Component"/>
+<aop-project name="16_value_WithOut_ConfigurationFile"/>
+<aop-project name="4_AutoWire_@_attribute_level_required"/>
+<aop-project name="25_named_postConstruct_preDestroy_WithOut_ConfigurationFile"/>
+<aop-project name="13_scope_WithOut_ConfigurationFile"/>
+<aop-project name="000_Autowire_annotation_Person"/>
+<aop-project name="12_Remove_configurationFile"/>
+</aop-reference-model>

@@ -1,0 +1,13 @@
+package com.ann.config;
+
+import java.util.Properties;
+
+public class SecondAppConfig_propertyfile {
+
+	public Properties newProperties(){
+		
+		Properties props = new Properties();
+		props.load(this.getClass().getResourceAsStream("chain.properties"));
+		return props
+	}
+}

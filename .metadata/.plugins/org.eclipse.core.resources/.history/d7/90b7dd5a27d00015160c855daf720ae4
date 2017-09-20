@@ -1,0 +1,14 @@
+package com.st.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Bycle {
+public Bycle() {
+	System.out.println("bycle created");
+}
+	public void run(){
+		
+		System.out.println("running......");
+	}
+}

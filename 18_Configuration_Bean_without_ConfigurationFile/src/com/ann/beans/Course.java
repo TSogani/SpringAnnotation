@@ -1,0 +1,31 @@
+package com.ann.beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+
+@Component("course")
+public class Course {
+	private String name;
+//	@Autowired
+	private Student student;
+	
+	
+	public void setStudent(Student student) {
+		this.student = student;
+	}
+
+	public Course() {
+		System.out.println("course created..");
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+}

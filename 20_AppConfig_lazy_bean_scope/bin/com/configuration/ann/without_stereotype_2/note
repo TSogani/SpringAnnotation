@@ -1,0 +1,2 @@
+@Import annotation is used for Place classes in IOC container these classes no-need
+to annotated with @Component annotation.

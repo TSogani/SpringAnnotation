@@ -1,0 +1,64 @@
+Problem with @Component:-
+
+1) When we are using @Component then it will have only one defination in IOC container.
+
+	ex:-
+	__________________________________________________________________________________
+	|case (1)
+	|	@Component
+	|   class Course{
+	|    	private String name;
+	|    	
+	|    	@Value("mca")
+	|    	public void setName(String name){
+	|    		this.name=name;
+	|    	}
+	|    	public String getName(){
+	|    		return name;
+	|    	}
+	|    }
+	|_____________________________________________________________________________
+	|note:-We can not achive multiple defination like bellow when we are using 
+	|      @Component annotation.
+	|      
+	|      mean we can not create multiple bean with multiple id.
+	|_____________________________________________________________________________
+	|<bean id="cource1" class="info.inetsolv.Class">
+	|	<property name="name" value="mca">
+	|</bean>
+	|
+	|<bean id="cource2" class="info.inetsolv.Class">
+	|	<property name="name" value="mca">
+	|</bean>
+	|________________________________________________
+	
+	
+	
+	case(2)  :-if we want to use properties file then also only we can change the value but we can
+			   not change the bean name.
+	
+	
+	@Component
+	 public class Course{
+	    	private String name;
+	    	
+	    	@Value(value="#{cource_prop.Cource_name}")
+	    	public void setName(String name){
+	    		this.name=name;
+	    	}
+	    	public String getName(){
+	    		return name;
+	    	}
+	    }
+		<context:component-scan>
+		<util:property name="cource_prop" location="classpath:db.properties">
+		</util:property>
+ 
+2) we can not apply @Component on predifine classes.
+	
+	For example:-we want to make Calender class as bean in IOC container 
+	             then how should i make.
+	             Answer:-by using @Configuration
+
+
+so we can resolve this problem by using @Configuration 

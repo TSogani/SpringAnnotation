@@ -1,0 +1,10 @@
+package com.st.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class LoanCalculator {
+public LoanCalculator() {
+	System.out.println("loan Calculator");
+}	
+}

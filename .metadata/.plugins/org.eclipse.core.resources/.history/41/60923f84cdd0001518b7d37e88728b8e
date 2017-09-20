@@ -1,0 +1,8 @@
+package com.ann.beans;
+
+public class AppConfig {
+	public Course course;
+	public Course newCourse(){
+		course = new Course();
+	}
+}

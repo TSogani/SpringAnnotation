@@ -1,0 +1,12 @@
+package com.ann.test;
+
+import org.springframework.context.ApplicationContext;
+
+import com.ann.beans.Course;
+
+public class Test {
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/ann/common/applicationContext.xml");
+		context.getBean("course",Course.class);
+	}
+}

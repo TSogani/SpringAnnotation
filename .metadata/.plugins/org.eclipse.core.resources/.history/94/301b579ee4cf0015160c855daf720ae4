@@ -1,0 +1,40 @@
+package com.aw.beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Person {
+
+	private int eno;
+	private String name;
+	private Passport passport; 
+	private Address address;
+	
+	
+	
+	
+	
+	public Person(Passport passport) {
+		super();
+		this.passport = passport;
+	}
+
+
+
+
+
+	public Person(Address address) {
+		super();
+		this.address = address;
+	}
+
+
+
+
+
+	@Override
+	public String toString() {
+		return "Person [eno=" + eno + ", name=" + name + ", passport="
+				+ passport + ", address=" + address + "]";
+	}
+
+}

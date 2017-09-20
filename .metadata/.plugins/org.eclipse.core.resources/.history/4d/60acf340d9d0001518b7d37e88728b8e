@@ -1,0 +1,6 @@
+package com.ann.beans;
+
+public class Chain {
+	private String name;
+	private String size; 
+}

@@ -1,0 +1,18 @@
+
+package com.st.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.st.beans.Toy;
+
+public class Test {
+	public static void main(String[] args) {
+		
+		new AnnotationConfigApplicationContext("com/st/beans.*")
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/st/common/applicationContext.xml");
+		Toy toy = context.getBean("abc",Toy.class);
+		toy.play();
+	}
+}

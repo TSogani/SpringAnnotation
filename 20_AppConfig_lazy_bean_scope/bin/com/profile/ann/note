@@ -1,0 +1,13 @@
+context.getEnvironment().setActiveProfiles("dev");
+
+only profile name change.so no-need to change huge amount of code.
+
+context.getEnvironment().setActiveProfiles("tester");
+
+note:-whenever we give our application to tester environment then 
+      tester environment are different. so tester environment 
+      datasource are diffrent so when modify the code then problem
+      is occured thatwhy for resolve this problem @Profile comes into 
+      picture.
+      	so we no-need to change huge code.We change only "dev" profile
+      	to "tester" profile name in Test.java class.

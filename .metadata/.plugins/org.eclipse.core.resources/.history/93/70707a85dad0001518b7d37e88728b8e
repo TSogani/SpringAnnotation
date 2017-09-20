@@ -1,0 +1,16 @@
+package com.ann.config;
+
+import org.springframework.beans.factory.annotation.Autowire;
+import org.springframework.config.java.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.ann.beans.Chain;
+@Configuration
+public class FirstAppConfig {
+	
+	@Bean(Autowire.BY_TYPE)
+	public Chain newChain(){
+		Chain chain = new Chain();
+		return chain;
+	}
+}

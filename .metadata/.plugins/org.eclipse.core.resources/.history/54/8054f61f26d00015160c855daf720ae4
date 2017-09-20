@@ -1,0 +1,10 @@
+package com.st.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component("abc")
+public class Toy {
+	public void play(){
+		System.out.println("play music ");
+	}
+}

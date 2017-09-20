@@ -1,0 +1,9 @@
+package com.st.beans;
+
+public class CacheManager {
+	public CacheManager() {
+
+		System.out.println("cacheManager Created");
+		System.out.println("data loaded...");
+	}
+}

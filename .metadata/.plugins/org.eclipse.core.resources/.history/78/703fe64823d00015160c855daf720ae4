@@ -1,0 +1,12 @@
+package com.st.beans;
+
+import org.springframework.stereotype.Component;
+
+// if we not give ant name in @component it cnfigure bean in ioc with the class name;
+
+@Component
+public class Toy {
+	public void play(){
+		System.out.println("play music ");
+	}
+}

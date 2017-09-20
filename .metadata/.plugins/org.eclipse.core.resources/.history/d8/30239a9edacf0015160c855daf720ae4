@@ -1,0 +1,6 @@
+package com.aw.beans;
+
+public class Passport {
+	private int id;
+	private String name;
+}

@@ -1,0 +1,9 @@
+package com.st.beans;
+
+
+
+public class Toy {
+	public void play(){
+		System.out.println("play music ");
+	}
+}

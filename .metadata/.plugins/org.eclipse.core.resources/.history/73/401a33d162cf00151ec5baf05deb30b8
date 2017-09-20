@@ -1,0 +1,13 @@
+package com.anno.test;
+
+import java.util.HashMap;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+		
+		
+		HashMp<String, Integer> map = new HashMap<String, Integer>();
+	}
+
+}

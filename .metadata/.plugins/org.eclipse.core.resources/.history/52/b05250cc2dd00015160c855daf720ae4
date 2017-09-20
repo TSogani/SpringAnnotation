@@ -1,0 +1,22 @@
+package com.st.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.st.beans.Processor;
+
+public class Test {
+	public static void main(String[] args) {
+
+		ApplicationContext context2 = new AnnotationConfigApplicationContext(
+				"com.st.beans");
+		Processor processor = context2.getBean("processor", Processor.class);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		processor.shutDown();
+	}
+}

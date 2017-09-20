@@ -1,0 +1,8 @@
+package com.ann.beans;
+
+public class SqlConnect {
+	
+	public void connect(){
+		System.out.println("connection successfull");
+	}
+}

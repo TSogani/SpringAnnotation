@@ -1,0 +1,19 @@
+package com.st.beans;
+
+import javax.annotation.PostConstruct;
+
+public class Processor {
+	public Processor() {
+		System.out.println("processor loading...");
+	}
+	
+	@PostConstruct
+	public void start(){
+		
+		System.out.println("processor running...");
+	}
+	
+	public void shutDown(){
+		
+	}
+}

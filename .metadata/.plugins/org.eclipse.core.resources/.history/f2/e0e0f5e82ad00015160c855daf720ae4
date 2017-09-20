@@ -1,0 +1,7 @@
+package com.st.beans;
+
+public class LoanCalculator {
+public LoanCalculator() {
+	System.out.println("loan Calculator");
+}	
+}

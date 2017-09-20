@@ -1,0 +1,13 @@
+package com.ann.config;
+
+import com.ann.beans.Bycle;
+
+public class RootConfig {
+
+	private Bycle new Bycle(){
+		
+		Bycle bycle = new Bycle();
+		
+		return bycle;
+	}
+}

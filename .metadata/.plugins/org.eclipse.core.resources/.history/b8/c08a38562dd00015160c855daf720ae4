@@ -1,0 +1,7 @@
+package com.st.beans;
+
+public class Processor {
+	public Processor() {
+		System.out.println("processor loading...");
+	}
+}

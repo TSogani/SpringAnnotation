@@ -1,0 +1,19 @@
+package com.ann.config;
+
+import java.io.IOException;
+import java.util.Properties;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class SecondAppConfig_propertyfile {
+
+	@Bean(name="propsVal")
+	public Properties newProperties() throws IOException{
+		
+		Properties props = new Properties();
+		props.load(this.getClass().getResourceAsStream("chain.properties"));
+		return props;
+	}
+}

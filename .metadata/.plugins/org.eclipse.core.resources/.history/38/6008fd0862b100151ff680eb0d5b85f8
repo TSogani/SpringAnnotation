@@ -1,0 +1,10 @@
+package com.anno.test;
+
+import java.util.HashMap;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+	}
+
+}

@@ -1,0 +1,10 @@
+ApplicationContext context = new AnnotationConfigApplicationContext(CollegeAppConfig.class);
+
+In this case we are specify only one class 'CollegeAppConfig.class' then
+container load only "CollegeAppConfig.class" class annotation class.
+
+that why @ComponentScan comes into picture
+
+when IOC container found @ComponentScan then it will load then classes
+which we specify in the @ComponentScan and specified class should annotated
+with @Component annotation.

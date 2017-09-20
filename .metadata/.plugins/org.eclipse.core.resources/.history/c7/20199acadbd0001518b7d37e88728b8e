@@ -1,0 +1,9 @@
+package com.ann.test;
+
+public class Test {
+	public static void main(String[] args) {
+		ApplicationContext context = new AnnotationConfigApplicationContext(RootAppConfig.class);
+		Motor motor = context.getBean("motor", Motor.class);
+		System.out.println(motor);
+	}
+}

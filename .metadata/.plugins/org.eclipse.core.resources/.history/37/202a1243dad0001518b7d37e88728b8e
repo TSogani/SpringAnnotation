@@ -1,0 +1,11 @@
+package com.ann.config;
+
+import com.ann.beans.Chain;
+
+public class FirstAppConfig {
+	
+	public Chain newChain(){
+		Chain chain = new Chain();
+		return chain 
+	}
+}

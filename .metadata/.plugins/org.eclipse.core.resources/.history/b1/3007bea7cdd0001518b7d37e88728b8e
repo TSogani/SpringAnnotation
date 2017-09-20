@@ -1,0 +1,13 @@
+package com.ann.beans;
+
+import org.springframework.context.annotation.Bean;
+
+
+public class AppConfig {
+	public Course course;
+@Bean
+	public Course newCourse(){
+		course = new Course();
+		return course;
+	}
+}
